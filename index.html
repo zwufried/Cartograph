@@ -1242,10 +1242,10 @@ function WorldCartographer() {
             const data = JSON.stringify({ worlds, universes }, null, 2);
             setExportData(data);
           }} style={{ fontSize:11, padding:"5px 12px", background:"transparent", border:"2px solid #1a1a1a", color:"#1a1a1a", fontFamily:"'Segoe UI',system-ui,sans-serif", whiteSpace:"nowrap" }}>
-            ↓ Export
+            ↑ Export
           </Btn>
           <label style={{ fontSize:11, padding:"5px 12px", background:"transparent", border:"2px solid #1a1a1a", color:"#1a1a1a", fontFamily:"'Segoe UI',system-ui,sans-serif", borderRadius:6, cursor:"pointer", display:"inline-flex", alignItems:"center", whiteSpace:"nowrap" }}>
-            ↑ Import
+            ↓ Import
             <input type="file" accept=".json" style={{ display:"none" }} onChange={e => {
               const file = e.target.files?.[0]; if (!file) return;
               const reader = new FileReader();
